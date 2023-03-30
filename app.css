@@ -1,0 +1,266 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My code from here */
+
+
+body {
+	min-height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background-image: url(images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: hsl(225, 100%, 94%);
+	z-index: -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: white;
+	height: 78vh;
+	width: 400px;
+	min-width: 300px;
+	z-index: 1;
+	text-align: center;
+	border-radius: 10px;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+.sub-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 0;
+	margin: 0 2.5em;
+	border-radius: 10px;
+	background-color: hsl(225, 100%, 98%);
+}
+
+.span-div {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 -2.2em;
+	color: hsla(0, 3%, 45%, 0.96);
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 600;
+
+}
+
+img {
+	border-radius: 10px 10px 0 0;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5;
+	color: hsla(0, 1%, 52%, 0.96);
+	font-weight: 500;
+}
+
+button,
+p,
+h1 {
+	margin: 0 2.5em;
+}
+
+
+button {
+	margin: 0 3.0em;
+	padding: 13px 0;
+	border-style: none;
+	border-radius: 10px;
+	color: white;
+	background-color: hsl(245, 75%, 52%);
+	font-weight: 600;
+	box-shadow: 0 15px 15px hsl(230, 62%, 89%);
+}
+
+.order_cancel {
+	padding-bottom: 30px;
+	font-weight: 700;
+	font-size: 14.5px;
+	color: rgb(87, 96, 105);
+}
+
+button:hover {
+	background-color: rgb(117, 109, 235);
+	cursor: pointer;
+	box-shadow: 0 15px 15px rgb(195, 191, 252);
+}
+
+.hover-effect-change {
+	font-weight: 700;
+	color: hsl(245, 77%, 55%);
+}
+
+
+.hover-effect-change:hover {
+	cursor: pointer;
+	color: rgb(117, 109, 235);
+}
+
+.order_cancel:hover {
+	cursor: pointer;
+}
+
+.annualsupply {
+	padding-bottom: 10px;
+	font-weight: 700;
+	color: black;
+}
+
+
+/* Making layout responisve */
+
+
+@media (max-width:426px) {
+	body {
+		background-image: none;
+	}
+
+	.content-div {
+		margin: 0 15px;
+	}
+
+	.sub-content {
+		margin: 0 1em;
+	}
+}
